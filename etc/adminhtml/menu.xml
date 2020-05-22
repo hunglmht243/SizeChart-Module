@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="PiraGo_SizeChart::sizechart" title="Size Chart" module="PiraGo_SizeChart" sortOrder="51" resource="PiraGo_SizeChart::sizechart" parent="Magento_Catalog::catalog"/>
+        <add id="PiraGo_SizeChart::manage_rules" title="Manage Rules" module="PiraGo_SizeChart" sortOrder="10"  action="pirago/rule/index" resource="PiraGo_SizeChart::manage_rules" parent="PiraGo_SizeChart::sizechart"/>
+        <add id="PiraGo_SizeChart::configuration" title="Configuration" module="PiraGo_SizeChart" sortOrder="99" action="adminhtml/system_config/edit/section/sizechart"  resource="PiraGo_SizeChart::configuration" parent="PiraGo_SizeChart::sizechart"/>
+    </menu>
+</config>

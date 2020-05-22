@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                 <resource id="Magento_Catalog::catalog">
+                    <resource id="PiraGo_SizeChart::sizechart" title="Size Chart" sortOrder="51">
+                        <resource id="PiraGo_SizeChart::manage_rules" title="Manage Rules" sortOrder="10"/>
+                        <resource id="PiraGo_SizeChart::configuration" title="Configuration" sortOrder="99" />
+                    </resource>
+                </resource>
+
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="PiraGo_SizeChart::sizechart_config" title="Size Chart"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

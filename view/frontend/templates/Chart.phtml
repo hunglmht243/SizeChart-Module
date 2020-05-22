@@ -1,0 +1,8 @@
+<?php
+// template không được echo false
+$front = $block->getFront();
+if (strpos($block->getType(), 'Tab') !== false) {
+    echo $front;
+}
+
+?>
